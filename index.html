@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Shuffle Science - Analyzing Machines, Riffles, and Algorithms in Card Shuffling</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+  </head>
+  <header>
+    <img src="images/edit_copy-removebg-preview.webp" alt="image of several playing cards" id="logo">
+    <h1>Shuffle Science - Analyzing Machines, Riffles, and Algorithms in Card Shuffling</h1>
+  </header>
+  <body onload="toggleDeck([...Array(52).keys().map((x) => x += 1)])">
+    <fieldset>
+      <div id="form">
+        <div>
+          <h2>Select Shuffling Method</h2>
+          <div class="toggle">
+            <input type="radio" id="manual" name="shuffleType" value="manual">
+            <label for="manual">Manual</label>
+            <input type="radio" id="rand" name="shuffleType" value="rand" checked>
+            <label for="rand">Randomize</label>
+            <input type="radio" id="riffle" name="shuffleType" value="riffle">
+            <label for="riffle">Riffle</label>
+          </div>
+        </div>
+
+        <div class="deck">
+          <label for="cardInput">Enter Deck As Comma Separated Values:</label> <br>
+          <input type="text" id="cardInput" name="cardInput" placeholder="e.g. 1, 2, 3, 4, 5, 6, 7...">
+        </div>
+      </div>
+
+      <br>
+      <div id="cardsContainer"></div>
+      <br>
+
+      <div id="info">
+        <button type="reset" id="resetBtn" onclick="reset()">Reset</button>
+        <button type="submit" id="cardBtn" onclick="shuffle()">Shuffle</button>
+        <p id="entropy">Entropy: <span id="entropyVal">0.00</span></p>
+      </div>
+    </fieldset>
+
+    <script src="shuffle.js"></script>
+  </body>
+</html>

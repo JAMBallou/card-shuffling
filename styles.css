@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600'); 
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #840E24;
+    color: white;
+    width: 100%;
+    max-height: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    z-index: 3;
+}
+
+#logo {
+    max-width: 5%;
+    height: 5%;
+    padding-right: 10px;
+}
+
+body {
+  margin: 0; 
+  padding: 1rem; 
+  padding-top: 120px;
+  box-sizing: border-box;
+  width: 100%; 
+  height: 100%;
+  font-size: 16px; 
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', 'Helvetica', sans-serif; 
+  -webkit-font-smoothing: antialiased;
+  background-color: #EEE;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#cardsContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+fieldset {
+  margin: 0;
+  padding: 1rem; 
+  box-sizing: border-box; 
+  display: block;
+  border: none; 
+  border: solid 1px #CCC;
+  min-width: 0;
+  max-width: 1150px;
+  height: min-content;
+  background-color: #FFF;
+  legend, .deck label {
+    margin: 0 0 10px; 
+    padding: 0;
+    width: 100%; 
+    float: left; 
+    display: table;
+    font-size: 1.5rem; 
+    line-height: 140%; 
+    font-weight: 600; 
+    color: black;  
+    + * {clear: both;}
+  }
+  .deck label {
+    cursor: text;
+    margin-bottom: 25px;
+    padding-top: -0.5rem;
+  }
+}
+
+body:not(:-moz-handler-blocked) fieldset {display: table-cell;}
+
+.toggle {
+  margin: 0 0 1.5rem; 
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex; 
+  flex-flow: row nowrap;
+  justify-content: flex-start; 
+  align-items: stretch;
+  input {
+    width: 0; 
+    height: 0; 
+    position: absolute; 
+    left: -9999px;
+  }
+  input + label {
+    cursor: pointer;
+    margin: 0; 
+    padding: .75rem 2rem; 
+    box-sizing: border-box;
+    position: relative; 
+    display: inline-block;
+    border: solid 1px #DDD; 
+    background-color: #FFF;
+    font-size: 1rem; 
+    line-height: 140%; 
+    font-weight: 600; 
+    text-align: center;
+    box-shadow: 0 0 0 rgba(255,255,255,0);
+    transition: border-color .15s ease-out, 
+        color .25s ease-out, 
+        background-color .15s ease-out,
+        box-shadow .15s ease-out;
+    &:first-of-type {
+        border-radius: 6px 0 0 6px; 
+        border-right: none;}
+    &:last-of-type {border-radius: 0 6px 6px 0; border-left: none;}
+  }
+  input:hover + label {
+    /*outline: #213140 solid 1px; */
+    background-color: #840E24;
+    color: white;
+    z-index: 2;
+  }
+  input:checked + label {
+    background-color: #D9183B;
+    color: #FFF;
+    box-shadow: 0 0 10px #840E24;
+    border-color: #D9183B;
+    z-index: 1;
+  }
+}
+
+input[type="text"] {
+    padding: .5rem 1rem;
+    border: solid 1px #DDD;
+    border-radius: 6px;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 16px;
+    width: 100%
+}
+
+@keyframes fade-in {
+    0% {
+        outline: 1px #840E24 solid;
+        outline-offset: -5px;
+        box-shadow: none;
+        border-radius: 5px;
+    }
+    50% {
+        outline: 5px #840E24 solid;
+        outline-offset: -5px;
+    }
+    100% {
+        outline: 5px #D9183B solid;
+        outline-offset: -5px;
+        box-shadow: 0 0 10px #840E24;
+        border-radius: 5px;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        outline: 5px #D9183B solid;
+        outline-offset: -5px;
+        box-shadow: 0 0 10px #840E24;
+        border-radius: 5px;
+    }
+    50% {
+        outline: 5px #840E24 solid;
+        outline-offset: -5px;
+    }
+    100% {
+        outline: 1px #840E24 solid;
+        box-shadow: none;
+        outline-offset: -5px;
+        border-radius: 5px;
+    }
+}
+
+#cardsContainer img {
+    padding: 5px;
+}
+
+img.highlighted {
+    outline: 5px #D9183B solid;
+    outline-offset: -5px;
+    box-shadow: 0 0 10px #840E24;
+    border-radius: 5px;
+}
+
+button {
+    cursor: url(images/mouse.webp), pointer;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #D9183B;
+}
+
+button:hover {
+    background-color: #840E24;
+}
+
+#info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+#entropyVal {
+    font-weight: bold;
+    color: #D9183B;
+}
+
+@media (max-width: 800px) {
+    #form {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #cardInput {
+        width: 90%;
+    }
+
+    h1 {
+        visibility: hidden;
+    }
+
+    h1:after {
+        content: "Shuffle Science"; 
+        visibility: visible;
+        display: block;
+        position: fixed;
+        top: 3%;
+        background-color: #840E24;
+        color: white;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        z-index: 3;
+        max-height: 8%;
+    }
+
+    header img {
+        min-width: 20%;
+    }
+}
