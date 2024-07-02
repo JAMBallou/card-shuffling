@@ -3,7 +3,8 @@
 <h2>About the site</h2>
 <p>This webpage is for my school science fair project, which made it to the State Fair. I am looking to improve the site by adding more than the current card <i>playground</i>.</p>
 <p>To use the page, first enter a deck using the text field as CSV or play around with the deck order by clicking on cards. To change the modes, select from the radio selector in the top left. Press the shuffle button to shuffle the deck, and the reset button to reset it.</p>
-<p>Also on the bottom, next to the buttons, you will see the **entropy** displayed. This value, measured in bit of Shannon entropy, represents how random the deck is compared to the starting deck.</p>
+<p>Also on the bottom, next to the buttons, you will see the <b>entropy</b> displayed. This value, measured in bit of Shannon entropy, represents how random the deck is compared to the starting deck.</p>
+<p>* Note - this site, as of now, works in <b>Google Chrome</b>, <b>Microsoft Edge</b>, and <b>Mozilla Firefox</b>.</p>
 
 <h2 align="center">Hi 👋, I'm Jamison Ballou</h2>
 <h3 align="center">High schooler who loves to code.</h3>
