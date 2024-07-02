@@ -1,4 +1,4 @@
-<h1>Shuffle Science - Analyzing Machines, Riffles, and Algorithms in Card Shuffling</h1>
+<h1 align="center">Shuffle Science - Analyzing Machines, Riffles, and Algorithms in Card Shuffling</h1>
 
 <h2>About the site</h2>
 <p>This webpage is for my school science fair project, which made it to the State Fair. I am looking to improve the site by adding more than the current card <i>playground</i>.</p>
@@ -6,8 +6,8 @@
 <p>Also on the bottom, next to the buttons, you will see the <b>entropy</b> displayed. This value, measured in bit of Shannon entropy, represents how random the deck is compared to the starting deck.</p>
 <p>* Note - this site, as of now, works in <b>Google Chrome</b>, <b>Microsoft Edge</b>, and <b>Mozilla Firefox</b>.</p>
 
-<h2 align="center">Hi 👋, I'm Jamison Ballou</h2>
-<h3 align="center">High schooler who loves to code.</h3>
+<h2>Hi 👋, I'm Jamison Ballou</h2>
+<h3>High schooler who loves to code.</h3>
 
 - 🔭 I’m currently working on **several JavaScript, Python, and C++ projects.**
 
