@@ -11,7 +11,7 @@
     <img src="images/header-img.webp" alt="image of several playing cards" id="logo">
     <h1>Shuffle Science - Analyzing Machines, Riffles, and Algorithms in Card Shuffling</h1>
   </header>
-  <body onload="toggleDeck([...Array(52).keys().map((x) => x += 1)])">
+  <body onload="toggleDeck([...Array(52).fill(0).map((_, i) => i + 1)])">
     <fieldset>
       <div id="form">
         <div>
