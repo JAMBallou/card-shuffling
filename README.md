@@ -2,9 +2,9 @@
 
 <h2>About the site</h2>
 <p>This webpage is for my school science fair project, which made it to the State Fair. I am looking to improve the site by adding more than the current card <i>playground</i>.</p>
-<p>To use the page, first enter a deck using the text field as CSV or play around with the deck order by clicking on cards. To change the modes, select from the radio selector in the top left. Press the shuffle button to shuffle the deck, and the reset button to reset it.</p>
+<p>To use the page, first enter a deck using the text field as CSV or play around with the deck order by clicking on cards. To change the modes, select from the radio selector in the top left. Press the shuffle button to shuffle the deck, and the reset button to reset it. The riffle button functionality simulates a "perfect" riffle shuffle, where the cards are cut into two haves and perfectly spliced together one by one. Notice what happens after several repeated "perfect" riffle shuffles. When playing around with the cards' position while clicking them, see how high you can get the entropy, and how this compares to the results gotten by randomizing the deck.</p>
 <p>Also on the bottom, next to the buttons, you will see the <b>entropy</b> displayed. This value, measured in bit of Shannon entropy, represents how random the deck is compared to the starting deck.</p>
-<p>* Note - this site, as of now, works in <b>Google Chrome</b>, <b>Microsoft Edge</b>, and <b>Mozilla Firefox</b>.</p>
+<p>* Note - this site, as of now, works in <b>all browsers. Please notify me</b> if the site does not work.</p>
 
 <h2>Hi 👋, I'm Jamison Ballou</h2>
 <h3>High schooler who loves to code.</h3>
